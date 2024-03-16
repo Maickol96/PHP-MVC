@@ -13,7 +13,7 @@ class UsuarioController{
 
         //objeto
         $usuario = new Usuario();
-        $todos_los_usuarios = $usuario->conseguirTodos();
+        $todos_los_usuarios = $usuario->conseguirTodos('usuarios');
 
         //vamos a mostrar la view mostrarTodos
         require_once 'views/usuarios/mostrar-todos.php';

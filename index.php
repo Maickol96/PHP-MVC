@@ -1,15 +1,15 @@
 <h1>Bienvenido a mi web con MVC</h1>
 <?php
 //CONTROLADOR FRONTAL
-require_once 'controllers/usuarioControllers.php';
-require_once 'controllers/notaController.php';
 
+
+require_once 'autoLoad.php';
 
 //Validacion de que existe el $_GET[controller]
 
 if (isset($_GET['controller'])) {
     $nombre_controlador = $_GET['controller'] . 'Controller';
-    var_dump($nombre_controlador);
+
 } else {
     echo "La pagina que buscas no existe1";
     exit();

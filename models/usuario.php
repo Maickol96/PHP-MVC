@@ -12,6 +12,13 @@ class Usuario extends ModeloBase{
 
 
     //getters ands setters
+
+
+//   con esto heredo del padre, para tener acceso a esa propiedad db
+    public function __construct(){
+        parent::__construct();
+    }
+
     public function getApellidos(){
         return $this->apellidos;
     }
